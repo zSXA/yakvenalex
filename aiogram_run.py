@@ -5,9 +5,12 @@ from aiogram.types import BotCommand, BotCommandScopeDefault
 # from work_time.time_func import send_time_msg
 
 async def set_commands():
-    commands = [BotCommand(command='start', description='Старт'),
-                BotCommand(command='start_2', description='Старт 2'),
-                BotCommand(command='start_3', description='Старт 3')]
+    commands = [
+        BotCommand(command='start', description='Старт'),
+        BotCommand(command='start_2', description='Старт 2'),
+        BotCommand(command='start_3', description='Старт 3'),
+        BotCommand(command='faq', description='Частые вопросы')
+    ]
     await bot.set_my_commands(commands, BotCommandScopeDefault())
 
 async def main():

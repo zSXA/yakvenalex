@@ -1,9 +1,10 @@
-from aiogram.types import KeyboardButton, ReplyKeyboardMarkup, KeyboardButtonPollType
+from aiogram.types import KeyboardButton, ReplyKeyboardMarkup, KeyboardButtonPollType, InlineKeyboardButton
 from create_bot import admins
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
 
 def main_kb(user_telegram_id: int):
     kb_list = [
+        [KeyboardButton(text="Давай инлайн!")],
         [KeyboardButton(text="📖 О нас"), KeyboardButton(text="👤 Профиль")],
         [KeyboardButton(text="📝 Заполнить анкету"), KeyboardButton(text="📚 Каталог")]
     ]
